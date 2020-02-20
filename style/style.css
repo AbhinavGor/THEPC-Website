@@ -29,6 +29,7 @@ body {
 .who_we_are{
   margin: 0% 10% 5% 10%;
   text-align: justify;
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -267,18 +268,32 @@ nav {
     animation: drop 1.5s ease;
   }  
   .parallax {
-        /* The image used */
-        background-image: url("back.jpg") !important;
-        position: relative;
-        /* Full height */
-        height: auto; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+    /* The image used */
+    background-image: url("back.jpg") !important;
+    position: relative;
+    /* Full height */
+    height: auto; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.parallax_events {
+  /* The image used */
+  background-image: url("back1.jpg") !important;
+  position: relative;
+  /* Full height */
+  height: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
 
 @media screen and (max-width: 768px)
@@ -301,6 +316,10 @@ nav {
 .parallax{
   background-image: url("back.jpg") !important;
   font-weight: bolder;
+}
+
+.parallax_events{
+  background-image: url("back1.jpg") !important;
 }
 
 .logo {

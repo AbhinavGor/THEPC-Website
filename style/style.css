@@ -141,16 +141,11 @@ body{
    box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
  }
 
- .timeline ul li .event_name{
+ .timeline ul li h3{
      margin: 0;
-     font-size: 24px;
-     padding: 0 10px 0 10px;
-     font-weight: bolder;
+     padding: 0;
+     font-weight: 600;
      color: black;
-     background-color: white;
-     border-radius: 18px;
-     width: fit-content;
-     margin-left: 30%;
  }
 
  .timeline ul li p{
@@ -424,6 +419,12 @@ nav {
 
   .timeline{
     font-size: 14px;
+  }
+  .content h3{
+    color: aliceblue !important;
+  }
+  .content p{
+    display: none;
   }
   .who_we_are{
     margin: 0% 10% 5% 10%;

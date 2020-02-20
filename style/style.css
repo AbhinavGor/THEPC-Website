@@ -289,7 +289,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 20px;
+    font-size: 12px;
     text-align: justify;
   }
 
@@ -302,10 +302,16 @@ nav {
   background-image: url("back.jpg") !important;
   font-weight: bolder;
 }
+
 .logo {
   margin-left: 14%;
-  margin-top : 10%;
+  margin-top : 40%;
   animation: drop 1.5s ease;
+  align-content: center;
+}
+
+.logo_img{
+  width: 80%;
 }
     body{
         background-color: black;

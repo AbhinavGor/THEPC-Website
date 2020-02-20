@@ -29,7 +29,6 @@ body {
 .who_we_are{
   margin: 0% 10% 5% 10%;
   text-align: justify;
-  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -65,6 +64,130 @@ button {
   opacity: 0.4;
   
 }
+
+/*TimeLine*/
+
+body{
+  margin: 0;
+  padding: 0; 
+ }
+ .timeline{
+   position: relative;
+   margin: 50px auto;
+   width: 100%;
+   padding: 40px;
+ }
+
+ .timeline:before{
+   content: '';
+   position: absolute;
+   left: 50%;
+   width: 2px;
+   height: 100%;
+   background: #c5c5c5;
+ }
+
+ .timeline ul{
+   margin: 0;
+   padding: 0;
+ }
+ .timeline ul li{
+   list-style: none;
+   line-height: normal;
+   position: relative;
+   width: 50%;
+   padding: 20px 40px;
+   box-sizing: border-box;
+
+ }
+
+ .timeline ul li:nth-child(odd){
+   float: left;
+   text-align: right;
+   clear: both;
+ }
+
+ .timeline ul li:nth-child(even){
+   float: right;
+   text-align: left;
+   clear: both;
+ }
+
+ .content{
+   padding-bottom: 20px;
+ }
+
+ .timeline ul li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+}
+
+ .timeline ul li:nth-child(even):before{
+   content: '';
+   position: absolute;
+   top: 24px;
+   left: -4px;
+   width: 10px;
+   height: 10px;
+   background: rgba(0,0,0,1);
+   border-radius: 50%;
+   box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+ }
+
+ .timeline ul li .event_name{
+     margin: 0;
+     font-size: 24px;
+     padding: 0 10px 0 10px;
+     font-weight: bolder;
+     color: black;
+     background-color: white;
+     border-radius: 18px;
+     width: fit-content;
+     margin-left: 30%;
+ }
+
+ .timeline ul li p{
+   margin: 10px 0 0;
+   padding: 0;
+ }
+
+ .timeline ul li .time h4{
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+ }
+ .timeline ul li:nth-child(odd) .time{
+  position: absolute;
+  top: 12px;
+  right: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background: black;
+  color: #FFF;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3;
+}
+
+ .timeline ul li:nth-child(even) .time{
+   position: absolute;
+   top: 12px;
+   left: -165px;
+   margin: 0;
+   padding: 8px 16px;
+   background: black;
+   color: #FFF;
+   border-radius: 18px;
+   box-shadow: 0 0 0 3;
+ }
+/*TimLine Ends*/
+
 
 .container{
   position: relative;
@@ -299,12 +422,15 @@ nav {
 @media screen and (max-width: 768px)
 {
 
+  .timeline{
+    font-size: 14px;
+  }
   .who_we_are{
     margin: 0% 10% 5% 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
   }
 

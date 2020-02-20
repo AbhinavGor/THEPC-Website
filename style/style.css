@@ -1,5 +1,3 @@
-
-  
 * {
 	margin: 0px;
 	padding: 0px;
@@ -16,10 +14,74 @@ body {
     height: 100%;          
 }
 
+/*Who We Are Section*/
+.s_heads{
+  text-align: center;
+  font-size: 50px;
+}
+
+.wwr_img{
+  width: 40%;
+  height: 10%;
+  margin-right: 5%;
+}
+
+.who_we_are{
+  margin: 0% 10% 5% 10%;
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+
 
 button {
 	font-family: 'Poppins', sans-serif;
   text-spacing : 5px;
+}
+
+.h_line{
+  width: 85%;
+  align-self: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 7.5% !important;
+  margin-right: 7.5% !important;
+  animation: flow 1.5s ease;
+  opacity: 0.4;
+}
+
+.h_uline{
+  width: 40%;
+  align-self: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 30% !important;
+  margin-right: 30% !important;
+  animation: flow 1.5s ease;
+  opacity: 0.4;
+  
+}
+
+.container{
+  position: relative;
+  width: 25%;
+}
+
+.container .btn{
+  position: absolute;
+  margin-top: -12%;
+  transform: translate(0%,-50%);
+  -ms-transform: translate(-40%, -50%);
+  background-color: #555;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
 }
 
 header {
@@ -221,6 +283,21 @@ nav {
 
 @media screen and (max-width: 768px)
 {
+
+  .who_we_are{
+    margin: 0% 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .wwr_img{
+    margin: 0% 0% 4% 12%;
+    width: 80%;
+  }
+  
 .parallax{
   background-image: url("back.jpg") !important;
   font-weight: bolder;

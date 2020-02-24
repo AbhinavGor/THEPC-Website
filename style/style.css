@@ -393,6 +393,7 @@ nav {
     position: relative;
     /* Full height */
     height: auto; 
+text-decoration: none;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -519,6 +520,7 @@ nav {
 .parallax{
   background-image: url("back.jpg") !important;
   font-weight: bolder;
+text-decoration: none;
 }
 
 .parallax_events{

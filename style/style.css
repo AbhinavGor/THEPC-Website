@@ -3,6 +3,9 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 body, html {
   overflow-x: hidden;
     height: 100%;

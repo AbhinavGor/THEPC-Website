@@ -184,10 +184,95 @@ body{
  }
 /*TimLine Ends*/
 
+/*Newsletter Begins*/
+.twe_container{
 
+   /* The image used */
+   background-image: url("twe_back.jpg") !important;
+   position: relative;
+   /* Full height */
+   height: auto;
+   text-decoration: none;
+ 
+   /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 5%;
+  text-align: center;
+  color: black;
+
+}
+.twe_container p{
+  max-width: 40%;
+  margin: 2% auto;
+  font-size: 15px;
+  font-weight: 300;
+}
+.email-box{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.email-box i{
+  background: #777777;
+  padding: 4px 4px 4px 4px;
+  width: 40px;
+  line-height: 40px;
+}
+#ic{
+  padding: 2px 2px 2px 2px;
+}
+.tbox, .btn{
+  border: none;
+  outline: none;
+}
+
+.tbox{
+  width: 0px;
+  transition: 0.4s;
+}
+
+.email-box:hover > .tbox, .tbox:focus{
+  width: 260px;
+  padding: 0 10px;
+}
+
+.btn{
+  background: #777777;
+  color: white;
+  padding: 4px 4px 4px 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.columna{
+  width: 40%;
+  margin: 10% auto;
+}
+.rowb{
+  margin: 10% auto;
+  display: flex;
+  flex-direction: row;
+}
+.columnb{
+  width: 20%;
+  margin: 0px 100px 0px 400px;
+}
+
+.columnc{
+  width: 20%;
+  margin: 0px 400px 0px 100px;
+}
+.row{
+  height: 30%;
+}
+/*Newsletter Ends*/
 .container{
   position: relative;
   width: 25%;
+
 }
 
 .container .btn{
@@ -241,7 +326,8 @@ footer {
   text-transform: uppercase;
   margin-top: 40px;
 	font-size: 14px;
-	letter-spacing: 0.2em;
+  letter-spacing: 0.2em;
+  text-decoration: none;
 	color: #fff;
 }
 
@@ -325,6 +411,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
+    position: sticky;
   }
   .nav-links-hamburger input{
     color: black;
@@ -355,6 +442,63 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgba(1,1,1,0.2);
+  color: white;
+  transition: 0.3s;
+  width: auto;
+  padding: 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+  border-radius: 20px;
+  border-color: inherit;
+  padding: 4px;
+}
+/* Add some padding inside the card container */
+.container {
+  padding: 20px 20px;
+  font-size: 30px;
+  width: 100%;
+  
+}
+
+.twe_editions{
+  padding: 2px ;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.twe_units_lat{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.twe_units{
+  background-color: white;
+}
+.twe_container{
+  padding: 0;
+  margin: 0;
+}
+.twe_container p{
+  font-size: 12px;
+  width: 100%;
+  padding: 4px 10px ;
+  color: white;
+  background-color: rgba(1,1,1,0.1);
+}
+
+.card p{
+  background-color: inherit;
+}
+
 @keyframes drop{
   0%{
       opacity: 0;
@@ -381,6 +525,16 @@ nav {
 
 @media screen and (min-width: 769px)
 {
+  .mobile
+  {
+    display: none;
+  }
+
+  .container {
+    padding: 20px 20px;
+    font-size: 46px;
+    width: 100%;
+  }
   .logo {
     margin-left: 33%;
     margin-top : 10%;
@@ -392,8 +546,8 @@ nav {
     background-image: url("back.jpg") !important;
     position: relative;
     /* Full height */
-    height: auto; 
-text-decoration: none;
+    height: auto;
+    text-decoration: none;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -417,9 +571,59 @@ text-decoration: none;
 }
 }
 
+
+
 @media screen and (max-width: 768px)
 {
-
+  .columna img{
+    width: 100%;
+    height: 100%;
+  }
+  .desktop{
+    display: none;
+  }
+  .twe_editions{
+    margin-left: 6%;
+    margin-right: 60%;
+  }
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 2px;
+    font-size: 30px !important;
+    
+  }
+  
+  .twe_editions{
+    padding: 2px ;
+    margin: 2% auto;
+  }
+  .twe_units_lat{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  .twe_units{
+    background-color: white;
+  }
+  .twe_container{
+    padding: 0;
+    margin: 0;
+  }
+  .twe_container p{
+    font-size: 12px;
+    width: 100%;
+  }
   .timeline{
     font-size: 14px;
   }

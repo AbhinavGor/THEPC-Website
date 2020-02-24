@@ -379,7 +379,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 800px)
+@media screen and (min-width: 769px)
 {
   .logo {
     margin-left: 33%;

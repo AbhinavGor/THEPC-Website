@@ -191,7 +191,7 @@ body{
 .twe_container{
 
    /* The image used */
-   background-image: url("twe_back.jpg") !important;
+   background-image: url("back.jpg") !important;
    position: relative;
    /* Full height */
    height: auto;
@@ -547,7 +547,7 @@ nav {
   .parallax {
     /* The image used */
     /* background-image: url("back.jpg") !important; */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("back.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("twe_back.jpg");
     position: relative;
     /* Full height */
     height: auto;
@@ -726,7 +726,7 @@ nav {
   }
   
 .parallax{
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("back.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("twe_back.jpg");
   font-weight: bolder;
 text-decoration: none;
 }

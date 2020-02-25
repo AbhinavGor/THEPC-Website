@@ -75,6 +75,7 @@ body{
   margin: 0;
   padding: 0; 
  }
+ 
  .timeline{
    position: relative;
    margin: 50px auto;
@@ -149,7 +150,6 @@ body{
      margin: 0;
      padding: 0;
      font-weight: 600;
-     color: black;
  }
 
  .timeline ul li p{
@@ -191,7 +191,7 @@ body{
 .twe_container{
 
    /* The image used */
-   background-image: url("back.jpg") !important;
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("newsletter.jpg");
    position: relative;
    /* Full height */
    height: auto;
@@ -204,7 +204,7 @@ body{
   background-size: cover;
   padding: 10% 5%;
   text-align: center;
-  color: black;
+  color: white;
 
 }
 .twe_container p{
@@ -539,6 +539,7 @@ nav {
     width: 100%;
   }
   .logo {
+    opacity: 0.8;
     margin-left: 33%;
     margin-top : 10%;
     border-radius: 15px;
@@ -562,7 +563,7 @@ nav {
 
 .parallax_events {
   /* The image used */
-  background-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("events.jpg");
   position: relative;
   /* Full height */
   height: auto; 
@@ -573,6 +574,13 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.content h3{
+  background: linear-gradient(to right, rgba(0,0,0,1), rgba(100,100,100,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 }
 
 
@@ -640,9 +648,9 @@ nav {
     right: -6px;
     width: 10px;
     height: 10px;
-    background: rgba(233,33,99,1);
+    color: rgba(0,0,0,1);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.4);
   }
 
   .timeline ul li:nth-child(even):before{
@@ -652,16 +660,16 @@ nav {
     right: -4px;
     width: 10px;
     height: 10px;
-    background: rgba(233,33,99,1);
+    color: rgba(0,0,0,1);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.4);
   }
 
   .timeline ul li h3{
       margin: 0;
       padding: 0;
       font-weight: 600;
-      color: rgba(233,33,99,1);
+      color: rgba(0,0,0,1);
   }
 
   .timeline ul li p{
@@ -680,7 +688,7 @@ nav {
     right: -165px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(233,33,99,1);
+    color: rgba(0,0,0,1);
     color: #FFF;
     border-radius: 18px;
     box-shadow: 0 0 0 3;
@@ -692,7 +700,7 @@ nav {
     left: -165px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(233,33,99,1);
+    color: rgba(0,0,0,1);
     color: #FFF;
     border-radius: 18px;
     box-shadow: 0 0 0 3;
@@ -726,16 +734,17 @@ nav {
   }
   
 .parallax{
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("twe_back.jpg");
+  background: url("twe_back.jpg");
   font-weight: bolder;
 text-decoration: none;
 }
 
 .parallax_events{
-  background-color: black !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("events.jpg");
 }
 
 .logo {
+  opacity: 0.8;
   margin-left: 14%;
   margin-top : 20%;
   animation: drop 1.5s ease;
